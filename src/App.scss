@@ -28,6 +28,9 @@ a {
     &:visited {
         color: v.$white-color-1;
     }
+    &:hover {
+        color: orange;
+    }
 }
 
 *:focus {
