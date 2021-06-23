@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as v;
+
+.btn {
+    display: inline-block;
+    font-family: v.$font-family-secondary;
+    font-weight: 400;
+    background: v.$secondary-color;
+    padding: 1em 1.4em;
+    border: none;
+    border-radius: 5px;
+    color: v.$white-color-1;
+}
+
+li .btn-white {
+    background: v.$white-color-1;
+    color: v.$secondary-color;
+}
+.btn-shadow {
+    box-shadow: v.$box-shadow-button;
+}
+
+.btn:focus {
+    background-color: v.$primary-color;
+}
+
+.btn-white:focus {
+    color: v.$white-color-1;
+}

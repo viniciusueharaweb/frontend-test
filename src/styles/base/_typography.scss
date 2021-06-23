@@ -1,0 +1,71 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins";
+
+/**
+* @desc         adds default text styles
+* @requires     variables.scss
+*/
+body {
+    line-height: v.$base-line-height;
+}
+
+body,
+select,
+textarea {
+    font-family: v.$font-family-default;
+}
+
+// headings and paragraph
+h1,
+h2,
+h3 {
+    font-family: v.$font-family-default;
+    font-weight: v.$font-w-bold;
+    color: v.$primary-color;
+}
+
+h4,
+h5,
+h6,
+p,
+::placeholder {
+    font-family: v.$font-family-secondary;
+    font-weight: v.$font-w-regular;
+    letter-spacing: 1px;
+}
+
+h1 {
+    @include mixins.font-size(v.$h1-font-sizes);
+    letter-spacing: 0.12rem;
+}
+h2 {
+    @include mixins.font-size(v.$h2-font-sizes);
+    letter-spacing: 0.12rem;
+}
+h3 {
+    @include mixins.font-size(v.$h3-font-sizes);
+}
+
+h4 {
+    @include mixins.font-size(v.$h4-font-sizes);
+    color: v.$gray-color-2;
+}
+h5,
+h6 {
+    font-size: 0.8rem;
+}
+
+p {
+    @include mixins.font-size(v.$p-font-sizes);
+    color: v.$gray-color-2;
+}
+
+input,
+select {
+    font-family: v.$font-family-secondary;
+}
+
+::placeholder {
+    color: v.$gray-color-2;
+    letter-spacing: 0;
+}

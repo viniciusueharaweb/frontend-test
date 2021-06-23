@@ -1,0 +1,54 @@
+.newsletter__section {
+    display: flex;
+    align-items: center;
+    height: max(49vw, 500px);
+    background-image: url("../../assets/bloco_final_image.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: max(50%, 500px);
+}
+.newsletter__wrapper {
+    width: 55%;
+    margin-left: 13.8%;
+    h2 {
+        width: 55%;
+        margin: 0% 0 4% 0;
+    }
+    form {
+        display: flex;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .newsletter__wrapper {
+        form {
+            display: block;
+            width: 60%;
+        }
+        a {
+            width: 90px;
+            margin: 20px auto 0;
+        }
+    }
+}
+@media screen and (max-width: 710px) {
+    .newsletter__wrapper {
+        width: 90%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.78);
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        h2 {
+            width: 100%;
+        }
+        form {
+            width: 100%;
+        }
+    }
+}

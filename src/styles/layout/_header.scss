@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as v;
+header {
+    background-image: url("../../assets/Illustration.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: max(63.8%, 650px);
+    height: max(55vw, 550px);
+}
+
+.hero {
+    margin: 19% 0 30%;
+    h1 {
+        width: 354px;
+    }
+    form {
+        width: 38%;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.search {
+    display: flex;
+}
+
+@media screen and (max-width: 935px) {
+    .hero {
+        width: 344px;
+        background-color: rgba(255, 255, 255, 0.78);
+        border-radius: 20px;
+        margin: 50px auto;
+        padding: 20px 20px;
+        form {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search {
+        display: block;
+    }
+    .hero {
+        text-align: center;
+        h1 {
+            width: auto;
+        }
+        a {
+            width: 60px;
+            margin: 20px auto 0;
+        }
+    }
+}
+@media screen and (max-width: 445px) {
+    .hero {
+        width: 100%;
+    }
+}

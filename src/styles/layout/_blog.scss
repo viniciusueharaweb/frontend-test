@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as v;
+
+.blog__section {
+    overflow: hidden;
+    background-color: v.$white-color-2;
+    padding-bottom: 9.5%;
+    h2 {
+        text-align: center;
+        padding-top: max(2%, 35px);
+        margin-top: 1%;
+        margin-bottom: max(1%, 20px);
+    }
+    p {
+        text-align: center;
+        margin-bottom: max(2%, 30px);
+    }
+}
+
+.oi {
+    margin-right: 10px;
+    background: #8c8;
+    border-radius: 5px;
+}

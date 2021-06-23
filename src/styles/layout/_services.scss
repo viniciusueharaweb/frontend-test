@@ -1,0 +1,42 @@
+.services__section {
+    height: max(52vw, 500px);
+    background-image: url("../../assets/bloco_services.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: max(52.5%, 500px);
+}
+.services__wrapper {
+    max-width: 450px;
+    margin: 9% 0 0 34%;
+    h2 {
+        margin-bottom: 7%;
+    }
+    p {
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .services__wrapper {
+        margin: 5% 10px 0 32%;
+        a {
+            text-align: center;
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .services__wrapper {
+        background-color: rgba(255, 255, 255, 0.78);
+        border-radius: 20px;
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .services__wrapper {
+        width: 90%;
+        margin: 60px auto 0;
+    }
+}

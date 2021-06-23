@@ -1,0 +1,58 @@
+// estilos globais
+
+@use "./styles/abstracts/variables" as v;
+
+* {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    &:link {
+        color: v.$white-color-1;
+    }
+    &:visited {
+        color: v.$white-color-1;
+    }
+}
+
+*:focus {
+    outline: 3px dashed orange;
+    border: none;
+}
+
+article {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+// home page inputs
+.main-input {
+    padding: 17px 15px;
+    width: 100%;
+    max-width: 384px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 4%;
+}
+::placeholder {
+    opacity: 0.8;
+    color: #9e9baf;
+}

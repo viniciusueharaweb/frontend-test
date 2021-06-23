@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as v;
+
+.logo a {
+    color: v.$secondary-color;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}

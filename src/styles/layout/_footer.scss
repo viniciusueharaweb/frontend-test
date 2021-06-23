@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    ul {
+        display: flex;
+    }
+    a:link {
+        color: v.$gray-color-2;
+    }
+    a:visited {
+        color: v.$gray-color-2;
+    }
+}
+
+.copyright {
+    color: v.$primary-color;
+    letter-spacing: 0;
+}
+
+.privacy {
+    margin-right: 50px;
+}
