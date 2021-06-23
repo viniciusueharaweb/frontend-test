@@ -18,6 +18,11 @@ Abra o terminal e digite os seguintes comandos:
 
 Abra [http://localhost:3000](http://localhost:3000) para a visualização do site no browser.
 
+_____________________________________________
+
+
+Link do site: https://frontend-test11vu.herokuapp.com/
+
 
 
 
